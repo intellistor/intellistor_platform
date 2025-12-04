@@ -1,4 +1,4 @@
-# 💻 Intellistor Frontend
+# 💻 Intellistor Solution
 
 Este repositório contém o site comercial da **Intellistor Solution**, uma solução inteligente para gestão de ambientes de armazenamento e backup corporativo. A interface foi projetada para oferecer uma experiência fluida, responsiva e integrada com o backend via APIs RESTful.
 
