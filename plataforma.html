@@ -185,6 +185,48 @@
 }
 
 
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  top: 60px;                 /* começa logo abaixo do header */
+  left: 0;
+  width: 250px;              /* mesma largura que já usava */
+  height: calc(100% - 60px); /* ocupa o resto da tela */
+  background-color: #003366; /* cor que já usa */
+  overflow-y: auto;          /* rolagem se precisar */
+}
+
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: var(--intellistor-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.header-left h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-right .login-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-right .login-btn:hover {
+  text-decoration: underline;
+}
+
+
+
   </style>
 </head>
 <body>
@@ -277,8 +319,14 @@
   </aside>
 
   <div class="main">
-    <header  id="header">
-      Intellistor Platform
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1>Intellistor Platform</h1>
+      </div>
+      <div class="header-right">
+        <a href="#login" class="login-btn">Login</a>
+      </div>
     </header>
 
     <!--<nav>
