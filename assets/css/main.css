@@ -5265,3 +5265,598 @@ textarea:focus {
   background: transparent !important;
   box-shadow: none !important;
 }
+
+/* =========================================================
+   Intellistor - Responsividade Mobile Final
+   Corrige Hero, Header, Botões, Cards, Vídeo e Demo
+   ========================================================= */
+
+@media screen and (max-width: 980px) {
+
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  body {
+    min-width: 320px !important;
+  }
+
+  /* Header: no tablet ainda pode aparecer, mas mais compacto */
+  #header {
+    height: auto !important;
+    min-height: 3.5em !important;
+    padding: 0.65em 1em !important;
+  }
+
+  #header h1 {
+    font-size: 0.95em !important;
+  }
+
+  #header nav ul {
+    gap: 0.55em !important;
+  }
+
+  #header nav ul li a {
+    font-size: 0.85em !important;
+  }
+
+  /* Containers */
+  .container {
+    width: 100% !important;
+    max-width: calc(100% - 2em) !important;
+  }
+
+  .wrapper {
+    padding: 4em 1.25em 2.5em 1.25em !important;
+    min-height: auto !important;
+  }
+
+  header.major {
+    margin-bottom: 2em !important;
+  }
+
+  header.major h2 {
+    font-size: 1.85em !important;
+    line-height: 1.2 !important;
+  }
+
+  header.major p {
+    font-size: 1em !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Cards */
+  .box.alt section {
+    padding: 1.5em 1.25em !important;
+    margin-bottom: 1em !important;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .row > * {
+    padding-left: 0 !important;
+    padding-top: 1em !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+
+  /* O template original esconde o header no mobile.
+     Aqui mantemos um header compacto e funcional. */
+  #header {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    min-height: 3.6em !important;
+    height: auto !important;
+
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    padding: 0.65em 0.85em !important;
+
+    background: rgba(7, 11, 20, 0.94) !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.12) !important;
+
+    z-index: 10000 !important;
+  }
+
+  #header h1 {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 0.85em !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  #header h1 a {
+    border-bottom: 0 !important;
+  }
+
+  /* Em celular, reduzimos o menu para não quebrar o layout.
+     Mantém idioma + CTA principal. */
+  #header nav {
+    display: block !important;
+  }
+
+  #header nav ul {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0.5em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #header nav ul li {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #header nav ul li.language-switch,
+  #header nav ul li:last-child {
+    display: inline-flex !important;
+  }
+
+  #header nav ul li:last-child a.button,
+  #header nav ul li:last-child a {
+    height: 2.35em !important;
+    line-height: 2.35em !important;
+    padding: 0 0.85em !important;
+    font-size: 0.72em !important;
+    white-space: nowrap !important;
+  }
+
+  .language-switch a {
+    width: 1.9em !important;
+    height: 1.9em !important;
+    font-size: 1em !important;
+    padding: 0 !important;
+  }
+
+  /* HERO PRINCIPAL */
+  #banner.hero,
+  #banner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 100svh !important;
+    height: auto !important;
+
+    padding: 5.25em 1.15em 3em 1.15em !important;
+
+    overflow: hidden !important;
+    background: #070B14 !important;
+    box-shadow: none !important;
+  }
+
+  #banner:before {
+    height: 100% !important;
+    min-height: 100svh !important;
+  }
+
+  #banner .hero-video,
+  .hero-video {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    filter: brightness(0.42) contrast(1.05) saturate(1.05) !important;
+    z-index: 0 !important;
+  }
+
+  #banner .content {
+    position: relative !important;
+    z-index: 2 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+
+    padding: 0 !important;
+    margin: 0 auto !important;
+
+    text-align: center !important;
+  }
+
+  #banner .content header {
+    display: block !important;
+    margin: 0 0 1.2em 0 !important;
+    text-align: center !important;
+  }
+
+  #banner .content header h2 {
+    font-size: clamp(2.05em, 10vw, 3em) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.045em !important;
+    margin: 0 !important;
+  }
+
+  #banner .content h3 {
+    width: 100% !important;
+    max-width: 22em !important;
+    margin: 0 auto !important;
+
+    font-size: 0.98em !important;
+    line-height: 1.55 !important;
+    font-weight: 300 !important;
+    color: rgba(248, 250, 252, 0.86) !important;
+  }
+
+  #banner .content br {
+    display: none !important;
+  }
+
+  #banner .actions,
+  #banner .actions.special {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75em !important;
+
+    width: 100% !important;
+    max-width: 18em !important;
+
+    margin: 1.75em auto 0 auto !important;
+    padding: 0 !important;
+  }
+
+  #banner .actions li {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  #banner .button {
+    width: 100% !important;
+    height: 2.85em !important;
+    line-height: 2.85em !important;
+    padding: 0 1em !important;
+    font-size: 0.88em !important;
+  }
+
+  #banner .goto-next {
+    display: none !important;
+  }
+
+  /* SPOTLIGHTS: em mobile vira imagem em cima + texto abaixo */
+  .spotlight,
+  .spotlight.left,
+  .spotlight.right,
+  .spotlight.bottom {
+    display: block !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #070B14 !important;
+  }
+
+  .spotlight:before,
+  .spotlight:after {
+    display: none !important;
+  }
+
+  .spotlight .image.main,
+  .spotlight .image.fit.main {
+    display: block !important;
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    background: #070B14 !important;
+    overflow: hidden !important;
+  }
+
+  .spotlight .image.main img,
+  .spotlight .image.fit.main img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 46vh !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  .spotlight .content {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+
+    padding: 3em 1.35em 2.5em 1.35em !important;
+
+    background:
+      linear-gradient(180deg, #070B14 0%, #0B1220 100%) !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .spotlight .content h2 {
+    font-size: 1.65em !important;
+    line-height: 1.2 !important;
+  }
+
+  .spotlight .content p,
+  .spotlight .content li {
+    font-size: 0.95em !important;
+    line-height: 1.6 !important;
+  }
+
+  .spotlight .content .actions {
+    width: 100% !important;
+    margin-top: 1.5em !important;
+  }
+
+  .spotlight .content .actions li,
+  .spotlight .content .actions .button {
+    width: 100% !important;
+  }
+
+  .spotlight .goto-next {
+    display: none !important;
+  }
+
+  /* WRAPPERS E CARDS */
+  .wrapper {
+    padding: 3.5em 1.25em 2.5em 1.25em !important;
+    min-height: auto !important;
+  }
+
+  .wrapper > .container,
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .box.alt section {
+    min-height: auto !important;
+    padding: 1.35em 1.15em !important;
+    border-radius: 1em !important;
+  }
+
+  .icon.major {
+    width: 3.4em !important;
+    height: 3.4em !important;
+    line-height: 3.4em !important;
+    margin-bottom: 1em !important;
+  }
+
+  /* Formulário */
+  form.cta input,
+  form.cta textarea,
+  form.cta .button,
+  form.cta input[type="submit"] {
+    width: 100% !important;
+  }
+
+  #contato .actions li,
+  #contato .actions .button {
+    width: 100% !important;
+  }
+
+  /* Demo pages */
+  #demo-hero,
+  .demo-hero-section {
+    display: flex !important;
+    align-items: center !important;
+
+    min-height: 100svh !important;
+    height: auto !important;
+
+    padding: 5.25em 1.15em 2.75em 1.15em !important;
+  }
+
+  #demo-hero header.major h2 {
+    font-size: clamp(1.85em, 8vw, 2.45em) !important;
+    line-height: 1.12 !important;
+  }
+
+  #demo-hero header.major p {
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
+  }
+
+  .demo-video-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0.9em !important;
+  }
+
+  .demo-video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .demo-scroll-note {
+    font-size: 0.8em !important;
+    line-height: 1.4 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #banner.hero,
+  #banner {
+    padding-top: 4.9em !important;
+    padding-bottom: 2.4em !important;
+  }
+
+  #banner .content header h2 {
+    font-size: 2.05em !important;
+  }
+
+  #banner .content h3 {
+    font-size: 0.92em !important;
+    max-width: 20em !important;
+  }
+
+  #banner .actions,
+  #banner .actions.special {
+    max-width: 17em !important;
+  }
+
+  #banner .button {
+    font-size: 0.82em !important;
+  }
+
+  .wrapper {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .spotlight .content {
+    padding-left: 1.1em !important;
+    padding-right: 1.1em !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Demo Hero buttons mobile
+   Mantém os botões da demo empilhados como no index
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+  #demo-hero .actions,
+  #demo-hero .actions.special {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    max-width: 18em !important;
+
+    margin: 1.5em auto 0 auto !important;
+    padding: 0 !important;
+    gap: 0.75em !important;
+  }
+
+  #demo-hero .actions li,
+  #demo-hero .actions.special li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #demo-hero .actions li a,
+  #demo-hero .actions.special li a,
+  #demo-hero .button {
+    display: block !important;
+    width: 100% !important;
+
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 2.85em !important;
+
+    padding: 0.75em 1em !important;
+
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #demo-hero .actions,
+  #demo-hero .actions.special {
+    max-width: 17em !important;
+  }
+
+  #demo-hero .actions li a,
+  #demo-hero .actions.special li a,
+  #demo-hero .button {
+    font-size: 0.82em !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Demo closing buttons mobile
+   Mantém os botões do fechamento empilhados no celular
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+  #demo-fechamento .actions,
+  #demo-fechamento .actions.special {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    max-width: 18em !important;
+
+    margin: 1.5em auto 0 auto !important;
+    padding: 0 !important;
+    gap: 0.75em !important;
+  }
+
+  #demo-fechamento .actions li,
+  #demo-fechamento .actions.special li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #demo-fechamento .actions li a,
+  #demo-fechamento .actions.special li a,
+  #demo-fechamento .button {
+    display: block !important;
+    width: 100% !important;
+
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 2.85em !important;
+
+    padding: 0.75em 1em !important;
+
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #demo-fechamento .actions,
+  #demo-fechamento .actions.special {
+    max-width: 17em !important;
+  }
+
+  #demo-fechamento .actions li a,
+  #demo-fechamento .actions.special li a,
+  #demo-fechamento .button {
+    font-size: 0.82em !important;
+  }
+}
