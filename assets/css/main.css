@@ -5229,3 +5229,39 @@ textarea:focus {
     max-width: calc(100% - 2em);
   }
 }
+
+/* =========================================================
+   Intellistor - Language Switch compacto
+   ========================================================= */
+
+.language-switch a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.8em;
+  height: 1.8em;
+  padding: 0 !important;
+  line-height: 1;
+
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+
+  font-size: 1.05em;
+  text-decoration: none;
+  opacity: 0.82;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.language-switch a:hover {
+  opacity: 1;
+  transform: translateY(-1px) scale(1.08);
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.35));
+  background: transparent !important;
+  box-shadow: none !important;
+}
