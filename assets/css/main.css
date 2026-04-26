@@ -4257,3 +4257,975 @@ input, select, textarea {
 
 .carousel-button.prev { left: 10px; }
 .carousel-button.next { right: 10px; }
+
+/* =========================================================
+   Intellistor Theme Override
+   Camada visual comercial por cima do template Landed
+   ========================================================= */
+
+:root {
+  --int-bg: #070B14;
+  --int-bg-soft: #0D1424;
+  --int-panel: rgba(17, 24, 39, 0.86);
+  --int-panel-solid: #111827;
+
+  --int-primary: #38BDF8;
+  --int-secondary: #14B8A6;
+  --int-accent: #22C55E;
+
+  --int-text: #F8FAFC;
+  --int-muted: #CBD5E1;
+  --int-border: rgba(148, 163, 184, 0.22);
+}
+
+/* Base */
+html,
+body {
+  background: var(--int-bg);
+}
+
+body,
+input,
+select,
+textarea {
+  color: var(--int-muted);
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  color: var(--int-text);
+}
+
+p {
+  color: var(--int-muted);
+}
+
+/* Links */
+a {
+  color: var(--int-primary);
+}
+
+a:hover {
+  color: var(--int-secondary) !important;
+}
+
+/* Header */
+#header {
+  background: rgba(7, 11, 20, 0.86);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(148, 163, 184, 0.14);
+}
+
+body.landing #header {
+  background: rgba(7, 11, 20, 0.42);
+  backdrop-filter: blur(14px);
+}
+
+#header h1 a {
+  color: var(--int-text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+#header nav ul li a,
+#header nav ul li span {
+  color: rgba(248, 250, 252, 0.82);
+}
+
+#header nav ul li.active > a,
+#header nav ul li.active > span {
+  color: var(--int-primary);
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--int-border);
+  color: var(--int-text) !important;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+  box-shadow: inset 0 0 0 1px var(--int-primary);
+  color: var(--int-primary) !important;
+  background-color: rgba(56, 189, 248, 0.08);
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+  background: linear-gradient(135deg, var(--int-primary), var(--int-secondary));
+  color: #020617 !important;
+  box-shadow: 0 14px 34px rgba(56, 189, 248, 0.22);
+  font-weight: 700;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:hover {
+  background: linear-gradient(135deg, #7DD3FC, #2DD4BF);
+  color: #020617 !important;
+  box-shadow: 0 18px 44px rgba(20, 184, 166, 0.28);
+}
+
+/* Destaque textual */
+.highlight {
+  color: var(--int-primary);
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: none;
+}
+
+/* Header major */
+header.major:after {
+  background: linear-gradient(90deg, var(--int-primary), var(--int-secondary), var(--int-accent));
+  border-radius: 999px;
+  height: 0.18em;
+}
+
+/* Hero */
+#banner {
+  background-color: var(--int-bg);
+}
+
+#banner:after {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.18), transparent 32%),
+    radial-gradient(circle at 80% 30%, rgba(20, 184, 166, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(7, 11, 20, 0.78), rgba(7, 11, 20, 0.94)),
+    url("images/overlay.png");
+}
+
+.hero-video {
+  filter: brightness(0.65) contrast(1.08) saturate(1.05);
+}
+
+#banner .content {
+  text-align: center;
+  max-width: 980px;
+}
+
+#banner .content header h2 {
+  font-size: clamp(2rem, 5vw, 4.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+#banner .content h3 {
+  max-width: 820px;
+  margin: 1.25em auto 0 auto;
+  color: rgba(248, 250, 252, 0.82);
+  font-weight: 300;
+}
+
+/* Spotlight */
+.spotlight .content {
+  background: rgba(7, 11, 20, 0.88);
+  backdrop-filter: blur(12px);
+}
+
+.spotlight.style1 .content {
+  border-color: var(--int-primary);
+}
+
+.spotlight.style2 .content {
+  border-color: var(--int-secondary);
+}
+
+.spotlight.style3 .content {
+  border-color: var(--int-accent);
+}
+
+/* Wrapper */
+.wrapper {
+  background: var(--int-bg-soft);
+}
+
+.wrapper.style1 {
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(20, 184, 166, 0.08), transparent 30%),
+    var(--int-bg-soft);
+}
+
+.wrapper.style2 {
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(20, 184, 166, 0.18)),
+    var(--int-bg);
+}
+
+/* Cards das soluções */
+.box.alt section {
+  padding: 2em 1.5em;
+  border: 1px solid var(--int-border);
+  border-radius: 1.25em;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.20);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.box.alt section:hover {
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.55);
+  background:
+    linear-gradient(180deg, rgba(56, 189, 248, 0.10), rgba(20, 184, 166, 0.04));
+}
+
+/* Ícones */
+.icon.major {
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(20, 184, 166, 0.16));
+  border: 1px solid rgba(56, 189, 248, 0.28);
+}
+
+.icon.major.alt:before,
+.icon.alt:before {
+  color: var(--int-bg) !important;
+  text-shadow:
+    1px 0 0 var(--int-primary),
+    -1px 0 0 var(--int-primary),
+    0 1px 0 var(--int-primary),
+    0 -1px 0 var(--int-primary);
+}
+
+/* Formulário */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  border-color: var(--int-border);
+  background: rgba(15, 23, 42, 0.68);
+  color: var(--int-text);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--int-primary);
+}
+
+/* Footer */
+#footer {
+  background: #050816;
+}
+
+#footer .icons .icon.alt:before {
+  color: #050816 !important;
+  text-shadow:
+    1px 0 0 rgba(56, 189, 248, 0.7),
+    -1px 0 0 rgba(56, 189, 248, 0.7),
+    0 1px 0 rgba(56, 189, 248, 0.7),
+    0 -1px 0 rgba(56, 189, 248, 0.7);
+}
+
+/* =========================================================
+   Intellistor - Spotlight com imagem lateral visível
+   Mantém a imagem dentro da área visual à direita/esquerda
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+  .spotlight.left,
+  .spotlight.right {
+    display: grid;
+    min-height: calc(100vh - 3.5em);
+    height: calc(100vh - 3.5em);
+    overflow: hidden;
+    background: var(--int-bg, #070B14);
+  }
+
+  /* Layout: texto à esquerda, imagem à direita */
+  .spotlight.left {
+    grid-template-columns: 29em minmax(0, 1fr);
+  }
+
+  /* Layout: imagem à esquerda, texto à direita */
+  .spotlight.right {
+    grid-template-columns: minmax(0, 1fr) 29em;
+  }
+
+  /* Remove o overlay original do template sobre a seção */
+  .spotlight.left:before,
+  .spotlight.right:before {
+    display: none !important;
+  }
+
+  /* Faz a imagem aparecer no desktop */
+  .spotlight.left .image.main,
+  .spotlight.right .image.main {
+    display: block !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    overflow: hidden;
+    background: #f8fafc;
+    border-radius: 0;
+  }
+
+  /* Remove overlay da imagem */
+  .spotlight.left .image.main:before,
+  .spotlight.right .image.main:before {
+    display: none !important;
+  }
+
+  /* Imagem inteira dentro do quadrado/área visual */
+  .spotlight.left .image.main img,
+  .spotlight.right .image.main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    opacity: 1;
+    filter: none;
+    border-radius: 0;
+  }
+
+  /* Conteúdo textual */
+  .spotlight.left .content,
+  .spotlight.right .content {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 4em 3em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+      linear-gradient(135deg, rgba(7, 11, 20, 0.98), rgba(17, 24, 39, 0.94)) !important;
+    backdrop-filter: none;
+    border-width: 0 !important;
+    box-shadow: none;
+  }
+
+  /* Ordem dos elementos no grid */
+  .spotlight.left .content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .spotlight.left .image.main {
+    grid-column: 2;
+    grid-row: 1;
+    border-left: 1px solid rgba(56, 189, 248, 0.28);
+  }
+
+  .spotlight.right .image.main {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 1px solid rgba(56, 189, 248, 0.28);
+  }
+
+  .spotlight.right .content {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Ajusta botão/scroll */
+  .spotlight.left .goto-next,
+  .spotlight.right .goto-next {
+    z-index: 10;
+  }
+}
+
+/* =========================================================
+   Intellistor - Spotlight em 2 colunas reais
+   Texto sem imagem de fundo + imagem somente no painel maior
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+  .spotlight.left,
+  .spotlight.right {
+    display: grid !important;
+    height: calc(100vh - 3.5em) !important;
+    min-height: calc(100vh - 3.5em) !important;
+    overflow: hidden !important;
+    background: #070B14 !important;
+    box-shadow: none !important;
+  }
+
+  /* Texto à esquerda, imagem à direita */
+  .spotlight.left {
+    grid-template-columns: 30em minmax(0, 1fr) !important;
+  }
+
+  /* Imagem à esquerda, texto à direita */
+  .spotlight.right {
+    grid-template-columns: minmax(0, 1fr) 30em !important;
+  }
+
+  /* Desliga qualquer overlay/background herdado do Landed */
+  .spotlight:before,
+  .spotlight.left:before,
+  .spotlight.right:before,
+  .spotlight.style1:before,
+  .spotlight.style2:before,
+  .spotlight.style3:before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    background-image: none !important;
+  }
+
+  /* Painel da imagem */
+  .spotlight.left .image.main,
+  .spotlight.right .image.main,
+  .spotlight.left .image.fit.main,
+  .spotlight.right .image.fit.main {
+    display: block !important;
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    background: #f8fafc !important;
+    z-index: 1 !important;
+  }
+
+  /* Remove overlay interno da imagem */
+  .spotlight .image.main:before,
+  .spotlight .image.fit.main:before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    background-image: none !important;
+  }
+
+  /* Imagem renderizada somente no painel maior */
+  .spotlight.left .image.main img,
+  .spotlight.right .image.main img,
+  .spotlight.left .image.fit.main img,
+  .spotlight.right .image.fit.main img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    /*
+      contain = mostra a tela inteira, sem cortar.
+      cover = preenche tudo, mas pode cortar bordas.
+    */
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Painel de texto */
+  .spotlight.left .content,
+  .spotlight.right .content {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+
+    padding: 4.5em 3em !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    background:
+      linear-gradient(135deg, #070B14 0%, #0B1220 55%, #111827 100%) !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    z-index: 2 !important;
+  }
+
+  /* Ordem do grid */
+  .spotlight.left .content {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.left .image.main,
+  .spotlight.left .image.fit.main {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.right .image.main,
+  .spotlight.right .image.fit.main {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.right .content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  /* Separador visual entre texto e imagem */
+  .spotlight.left .image.main,
+  .spotlight.left .image.fit.main {
+    border-left: 1px solid rgba(56, 189, 248, 0.22) !important;
+  }
+
+  .spotlight.right .image.main,
+  .spotlight.right .image.fit.main {
+    border-right: 1px solid rgba(56, 189, 248, 0.22) !important;
+  }
+
+  /* Seta sempre por cima */
+  .spotlight .goto-next {
+    z-index: 5 !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Imagem centralizada sem cortar conteúdo
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+  .spotlight.left .image.main,
+  .spotlight.right .image.main,
+  .spotlight.left .image.fit.main,
+  .spotlight.right .image.fit.main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    background:
+      radial-gradient(circle at center, rgba(56, 189, 248, 0.08), transparent 45%),
+      #0D1424 !important;
+
+    overflow: hidden !important;
+  }
+
+  .spotlight.left .image.main img,
+  .spotlight.right .image.main img,
+  .spotlight.left .image.fit.main img,
+  .spotlight.right .image.fit.main img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Spotlight unificado
+   Sensação de uma única tela: sem linha divisória e com
+   background contínuo entre texto e imagem
+   ========================================================= */
+
+@media screen and (min-width: 981px) {
+
+  .spotlight.left,
+  .spotlight.right {
+    display: grid !important;
+    overflow: hidden !important;
+
+    height: min(760px, calc(100vh - 3.5em)) !important;
+    min-height: 680px !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        #060B14 0%,
+        #070D18 22%,
+        #08101D 45%,
+        #08101D 60%,
+        #070D18 78%,
+        #060B14 100%
+      ) !important;
+
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  /* texto menor + imagem maior */
+  .spotlight.left {
+    grid-template-columns: 30em minmax(0, 1fr) !important;
+  }
+
+  .spotlight.right {
+    grid-template-columns: minmax(0, 1fr) 30em !important;
+  }
+
+  /* remove overlays antigos do template */
+  .spotlight:before,
+  .spotlight:after,
+  .spotlight.left:before,
+  .spotlight.right:before,
+  .spotlight.style1:before,
+  .spotlight.style2:before,
+  .spotlight.style3:before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    background-image: none !important;
+  }
+
+  /* painel de texto */
+  .spotlight.left .content,
+  .spotlight.right .content {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    padding: 4.5em 3.2em !important;
+
+    /* fundo praticamente integrado à própria seção */
+    background: transparent !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    z-index: 2 !important;
+  }
+
+  /* leve profundidade, sem virar "caixa" */
+  .spotlight.left .content:before,
+  .spotlight.right .content:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(6, 11, 20, 0.94) 0%,
+        rgba(6, 11, 20, 0.86) 55%,
+        rgba(6, 11, 20, 0.30) 100%
+      );
+    pointer-events: none;
+  }
+
+  /* painel da imagem */
+  .spotlight.left .image.main,
+  .spotlight.right .image.main,
+  .spotlight.left .image.fit.main,
+  .spotlight.right .image.fit.main {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+
+    overflow: hidden !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    z-index: 1 !important;
+  }
+
+  /* máscara suave para integrar a imagem com o lado do texto */
+  .spotlight.left .image.main:after,
+  .spotlight.right .image.main:after,
+  .spotlight.left .image.fit.main:after,
+  .spotlight.right .image.fit.main:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* quando o texto está à esquerda, a imagem fica à direita */
+  .spotlight.left .image.main:after,
+  .spotlight.left .image.fit.main:after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(6, 11, 20, 0.42) 0%,
+        rgba(6, 11, 20, 0.16) 12%,
+        rgba(6, 11, 20, 0.02) 22%,
+        rgba(6, 11, 20, 0.00) 40%,
+        rgba(6, 11, 20, 0.10) 100%
+      );
+  }
+
+  /* quando a imagem está à esquerda e o texto à direita */
+  .spotlight.right .image.main:after,
+  .spotlight.right .image.fit.main:after {
+    background:
+      linear-gradient(
+        270deg,
+        rgba(6, 11, 20, 0.42) 0%,
+        rgba(6, 11, 20, 0.16) 12%,
+        rgba(6, 11, 20, 0.02) 22%,
+        rgba(6, 11, 20, 0.00) 40%,
+        rgba(6, 11, 20, 0.10) 100%
+      );
+  }
+
+  /* imagem centralizada e sem cortar */
+  .spotlight.left .image.main img,
+  .spotlight.right .image.main img,
+  .spotlight.left .image.fit.main img,
+  .spotlight.right .image.fit.main img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    background: transparent !important;
+    opacity: 1 !important;
+    filter: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* ordem do grid */
+  .spotlight.left .content {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.left .image.main,
+  .spotlight.left .image.fit.main {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.right .image.main,
+  .spotlight.right .image.fit.main {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .spotlight.right .content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  /* remove qualquer linha divisória antiga */
+  .spotlight.left .image.main,
+  .spotlight.left .image.fit.main,
+  .spotlight.right .image.main,
+  .spotlight.right .image.fit.main,
+  .spotlight.left .content,
+  .spotlight.right .content {
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+  }
+
+  .spotlight .goto-next {
+    z-index: 5 !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Padronização de altura das seções
+   Cada bloco ocupa uma tela inteira no desktop
+   Responsivo em tablets e mobile
+   ========================================================= */
+
+:root {
+  --int-header-height: 3.5em;
+  --int-section-height: calc(100vh - var(--int-header-height));
+  --int-section-min-height: 680px;
+}
+
+/* Desktop */
+@media screen and (min-width: 981px) {
+
+  /* Banner principal */
+  #banner {
+    height: var(--int-section-height) !important;
+    min-height: var(--int-section-min-height) !important;
+    max-height: none !important;
+    overflow: hidden !important;
+  }
+
+  #banner:before {
+    height: var(--int-section-height) !important;
+    min-height: var(--int-section-min-height) !important;
+  }
+
+  #banner .content {
+    min-height: var(--int-section-height) !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 4em 2em !important;
+  }
+
+  /* Spotlights: texto + imagem */
+  .spotlight.left,
+  .spotlight.right,
+  .spotlight.bottom,
+  .spotlight.top {
+    height: var(--int-section-height) !important;
+    min-height: var(--int-section-min-height) !important;
+    max-height: none !important;
+    overflow: hidden !important;
+  }
+
+  /* Wrappers com cards */
+  .wrapper {
+    min-height: var(--int-section-height) !important;
+    height: auto !important;
+    padding-top: 4.5em !important;
+    padding-bottom: 4.5em !important;
+
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .wrapper > .container {
+    width: 70em;
+    max-width: calc(100% - 4em);
+  }
+
+  /* Seções com muitos cards podem crescer se precisar */
+  #dores,
+  #solucoes,
+  #valor,
+  #publico,
+  #parceiros,
+  #cta-final,
+  #contato {
+    min-height: var(--int-section-height) !important;
+    height: auto !important;
+  }
+
+  /* Evita que cards fiquem espremidos */
+  .box.alt {
+    width: 100%;
+  }
+
+  /* Conteúdo textual nos spotlights */
+  .spotlight.left .content,
+  .spotlight.right .content {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+
+  /* Imagem nos spotlights */
+  .spotlight.left .image.main,
+  .spotlight.right .image.main,
+  .spotlight.left .image.fit.main,
+  .spotlight.right .image.fit.main {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+}
+
+/* =========================================================
+   Intellistor - Página demo.html
+   ========================================================= */
+
+.demo-video-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  border-radius: 1.25em;
+  overflow: hidden;
+  background: #070B14;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #070B14;
+}
+
+#demo-hero {
+  min-height: calc(100vh - 3.5em);
+  display: flex;
+  align-items: center;
+}
+
+#demo-hero .container {
+  width: 70em;
+  max-width: calc(100% - 4em);
+}
+
+#demo-conteudo .box.alt section {
+  min-height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  #demo-hero {
+    min-height: auto;
+    padding-top: 5em;
+    padding-bottom: 4em;
+  }
+
+  .demo-video-wrapper {
+    border-radius: 0.85em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #demo-hero .container {
+    max-width: calc(100% - 2em);
+  }
+}

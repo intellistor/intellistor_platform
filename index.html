@@ -1,365 +1,749 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
-<head>
-  <title>Intellistor Tecnologia</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="is-preload">
-  <div id="page-wrapper">
+  <head>
+    <title>Intellistor Tecnologia | Automação e FinOps para Storage Multivendor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><a href="plataforma.html" target="_blank">Intellistor Platform</a></h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="solucoes.html">Soluções</a>
-            <!--<ul>
-              <li><a href="#">Huawei</a></li>
-              <li><a href="#">Hitachi</a></li>
-              <li><a href="#">NetApp</a></li>
-              <li>
-                <a href="#">Armazenamento de Objetos</a>
-                <ul>
-                  <li><a href="#">Bucket S3</a></li>
-                </ul>
-              </li>
-            </ul>-->
-          </li>
-          <li><a href="#contato" class="button primary">Fale com um especialista</a></li>
-        </ul>
-      </nav>
-    </header>
+    <meta
+      name="description"
+      content="Intellistor Platform: automação, governança, FinOps e inteligência operacional para ambientes de storage multivendor."
+    />
 
-    <!-- Banner Video -->
-    <section id="banner" class="hero">
-      <!-- Vídeo como fundo -->
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="videos/video01.mp4" type="video/mp4" />
-        Seu navegador não suporta a exibição de vídeo.
-      </video>
+    <meta
+      name="keywords"
+      content="storage multivendor, automação de storage, FinOps, Huawei, Hitachi, NetApp, Pure Storage, Brocade, Cisco, Veritas, infraestrutura, DevOps"
+    />
 
-      <div class="content">
-        <header>
-          <h2><span class="highlight">Intellistor Platform:</span> o futuro da gestão de storage multivendor</h2>
-        </header>
-        <h3>Automatize, orquestre e analise ambientes críticos com inteligência.<br />
-            A próxima geração da operação em storage corporativo começa aqui.
-        </h3>
-        <br/>
-        <ul class="actions special">
-          <li><a href="#quem_somos" class="button primary">Saiba mais</a></li>
-          <li><a href="plataforma.html" target="_blank" class="button primary">Demo</a></li>
-        </ul>
-      </div>
-      <a href="#quem_somos" class="goto-next scrolly">Next</a>
-    </section>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
 
-    <!-- Quem Somos -->
-    <section id="quem_somos" class="spotlight style1 bottom">
-      <span class="image fit main"><img src="images/principal.png" alt="Infraestrutura de datacenter" /></span>
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-4 col-12-medium">
-              <header>
-                <h2>Quem somos</h2>
-                <p>Especialistas em automatizar e orquestrar ambientes de storage multivendor com inteligência e precisão.</p>
-              </header>
-            </div>
-            <div class="col-4 col-12-medium">
-              <p style="text-align: justify;">A proposta da Intellistor é criar uma nova plataforma de automação inspirada em experiências reais e
-                bem-sucedidas em ambientes corporativos críticos. O projeto é liderado por especialistas com
-                ampla vivência em infraestrutura, DevOps e gestão de dados — e que agora canalizam esse conhecimento
-                prático para desenvolver uma solução própria, mais aberta, escalável e ajustada às necessidades do
-                mercado.</p>
-            </div>
-            <div class="col-4 col-12-medium">
-              <p style="text-align: justify;">A Intellistor nasce com uma visão clara: simplificar operações, padronizar processos e ampliar a
-                governança em ambientes de storage e backup multivendor. Com base em lições aprendidas na prática,
-                estamos construindo uma plataforma preparada para gerar impacto imediato e sustentável em grandes
-                organizações.</p>
+  <body class="is-preload">
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo">
+          <a href="index.html">Intellistor</a>
+        </h1>
+
+        <nav id="nav">
+          <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#plataforma">Plataforma</a></li>
+            <li><a href="#solucoes">Solução</a></li>
+            <li><a href="#modulos">Módulos</a></li>
+            <li><a href="#valor">Valor</a></li>
+            <li><a href="#integracoes">Integrações</a></li>
+            <li><a href="#diagnostico">Diagnóstico</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="#contato" class="button primary">Agendar demonstração</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero / Banner -->
+      <section id="banner" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="videos/video01.mp4" type="video/mp4" />
+          Seu navegador não suporta a exibição de vídeo.
+        </video>
+
+        <div class="content">
+          <header>
+            <h2>
+              <span class="highlight">Intellistor Platform</span><br />
+              para storage multivendor
+            </h2>
+          </header>
+
+          <h3>
+            Centralize operações, reduza tarefas manuais, antecipe riscos de capacidade
+            e transforme dados técnicos em decisões financeiras para ambientes críticos.
+          </h3>
+
+          <div>
+            <br />
+            <br />
+            <ul class="actions special">
+              <li><a href="#contato" class="button primary">Solicitar diagnóstico</a></li>
+              <li><a href="demo.html" class="button">Ver demonstração</a></li>
+              <li><a href="#clientes" class="button">Suporte a clientes</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#desafio" class="goto-next scrolly">Next</a>
+      </section>
+
+      <!-- Desafio -->
+      <section id="desafio" class="spotlight style1 bottom">
+        <span class="image fit main">
+          <img src="images/new_version/problema.png" alt="Operação crítica de infraestrutura e storage" />
+        </span>
+
+        <div class="content">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-4 col-12-medium">
+                <header>
+                  <h2>Storage multivendor sem caos operacional</h2>
+                  <p>
+                    Ambientes críticos não podem depender apenas de planilhas,
+                    comandos manuais e conhecimento concentrado em poucas pessoas.
+                  </p>
+                </header>
+              </div>
+
+              <div class="col-4 col-12-medium">
+                <p style="text-align: justify;">
+                  Manter governança, padronização e eficiência tornou-se um desafio crítico
+                  em ambientes que combinam múltiplos fabricantes, consoles, APIs, processos
+                  e tecnologias em constante evolução.
+                </p>
+              </div>
+
+              <div class="col-4 col-12-medium">
+                <p style="text-align: justify;">
+                  A <strong>Intellistor Platform</strong> atua como uma camada inteligente
+                  para conectar automação, operação, inventário, capacidade, auditoria e
+                  FinOps em uma visão única para times técnicos e gestores de infraestrutura.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
-      </div>
-      <a href="#problema" class="goto-next scrolly">Next</a>
-    </section>
 
-    <!-- Problema -->
-    <section id="problema" class="spotlight style2 left">
-      <span class="image fit main"><img src="images/problema.png" alt="IA em operação técnica" /></span>
-      <div class="content">
-        <header>
-          <h2>O desafio da operação multivendor</h2>
-        </header>
-        <p>Ambientes de storage e backup cada vez mais complexos, múltiplos fabricantes, processos manuais e falta de
-          padronização colocam a operação sob constante risco.
-        </p>
-        <p>
-          A transformação digital exige muito mais do que infraestrutura robusta. É preciso automação, orquestração inteligente e governança — em tempo real.
-        </p>
-        <!--<ul class="actions">
-          <li><a href="#contato" class="button">Saiba mais</a></li>
-        </ul>-->
-        <a href="#solucao" class="goto-next scrolly">Next</a>
-      </div>
-    </section>
+        <a href="#dores" class="goto-next scrolly">Next</a>
+      </section>
 
-    <!-- Nossas Soluções -->
-    <section id="solucao" class="wrapper style1 special fade-up">
-      <div class="container">
-        <header class="major">
-          <h2>Nossas Soluções</h2>
-          <p>Automatização, orquestração e inteligência para ambientes de missão crítica</p>
-        </header>
+      <!-- Dores -->
+      <section id="dores" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Quando a operação de storage cresce, o controle não pode ficar manual.</h2>
+            <p>
+              Em ambientes multivendor, pequenas falhas de padronização, rastreabilidade e visibilidade
+              podem virar risco operacional, aumento de custo e dependência excessiva de especialistas.
+            </p>
+          </header>
+
+          <div class="box alt">
+            <div class="row gtr-uniform">
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-terminal"></span>
+                <h3>Operação manual demais</h3>
+                <p>
+                  Provisionar LUNs, Host Groups, Zones e acessos por comandos manuais aumenta
+                  o risco de erro, retrabalho e indisponibilidade.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-layer-group"></span>
+                <h3>Ambiente espalhado</h3>
+                <p>
+                  Cada fabricante tem console, API, nomenclatura e fluxo próprio, dificultando
+                  uma visão única da operação.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-search"></span>
+                <h3>Pouca rastreabilidade</h3>
+                <p>
+                  Sem histórico claro de quem executou, o que foi alterado e qual foi o resultado,
+                  auditorias e troubleshooting ficam mais lentos.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-chart-line"></span>
+                <h3>Capacidade imprevisível</h3>
+                <p>
+                  Sem leitura contínua de crescimento, uso real e tendência, decisões de expansão
+                  acabam sendo tomadas tarde demais.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-dollar-sign"></span>
+                <h3>Custo fora do radar</h3>
+                <p>
+                  Capacidade alocada, uso físico e desperdício financeiro ficam invisíveis quando
+                  dados técnicos não chegam à gestão.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-user-lock"></span>
+                <h3>Dependência de especialistas</h3>
+                <p>
+                  Quando o conhecimento fica concentrado em poucas pessoas, a operação perde escala,
+                  previsibilidade e resiliência.
+                </p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plataforma -->
+      <section id="plataforma" class="spotlight style2 left">
+        <span class="image fit main">
+          <img src="images/new_version/principal.png" alt="Intellistor Platform para automação de storage" />
+        </span>
+
+        <div class="content">
+          <header>
+            <h2>Uma plataforma para governar a operação de storage ponta a ponta</h2>
+          </header>
+
+          <p>
+            A <strong>Intellistor Platform</strong> centraliza inventário, automação, provisionamento,
+            auditoria, análise de capacidade e visão financeira em uma experiência única
+            para operação técnica e gestão executiva.
+          </p>
+
+          <p>
+            O objetivo é simples: <i>reduzir esforço manual, padronizar processos,
+            acelerar entregas e oferecer uma camada de inteligência sobre ambientes
+            multivendor.</i>
+          </p>
+
+          <ul class="actions">
+            <li><a href="#contato" class="button primary">Falar com especialista</a></li>
+          </ul>
+
+          <a href="#solucoes" class="goto-next scrolly">Next</a>
+        </div>
+      </section>
+
+      <!-- Soluções -->
+      <section id="solucoes" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Uma camada inteligente para transformar operação em controle.</h2>
+            <p>
+              A Intellistor Platform conecta storage, SAN, backup, automação, auditoria e FinOps em uma
+              plataforma única — reduzindo esforço manual, aumentando governança e dando visibilidade
+              técnica e financeira para decisões críticas.
+            </p>
+          </header>
 
           <div class="box alt">
             <div class="row gtr-uniform">
 
               <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="icon solid alt major fa-server"></span>
-                <h3>Storage Multivendor</h3>
-                <p>Orquestração centralizada e automação de processos críticos com suporte via API REST para Huawei, NetApp, Hitachi e Veritas. Reduza silos operacionais e gerencie tudo em um só lugar.</p>
+                <h3>Ecossistema tecnológico em um único lugar</h3>
+                <p>
+                  Centralize a operação de storages, clusters, hosts, LUNs e host groups,
+                  sem depender de múltiplos consoles e fluxos isolados por fabricante.
+                </p>
               </section>
 
               <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="icon solid alt major fa-code-branch"></span>
-                <h3>Automatização & DevOps</h3>
-                <p>Provisionamento de LUNs, HostGroups e políticas de acesso com agilidade e consistência. Padronize a infraestrutura SAN e reduza a dependência de operações manuais.</p>
+                <h3>Provisionamento padronizado</h3>
+                <p>
+                  Transforme tarefas manuais em fluxos controlados, repetíveis e rastreáveis,
+                  com automação orientada a boas práticas operacionais.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-network-wired"></span>
+                <h3>Orquestração ponta a ponta</h3>
+                <p>
+                  Conecte storage, switches, zones, fabrics e servidores em processos integrados,
+                  reduzindo falhas entre times, ferramentas e etapas operacionais.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-chart-pie"></span>
+                <h3>FinOps aplicado à infraestrutura</h3>
+                <p>
+                  Traduza capacidade alocada, uso físico e consumo técnico em visão financeira
+                  por controladora, host group, LUN, aplicação ou área de negócio.
+                </p>
               </section>
 
               <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="icon solid alt major fa-brain"></span>
-                <h3>IA Preditiva + FinOps</h3>
-                <p>Monitoramento inteligente com alertas personalizados e sugestões automáticas. Antecipe riscos, otimize capacidade e melhore decisões de alocação com foco em eficiência técnica e financeira.</p>
+                <h3>Previsão antes do incidente</h3>
+                <p>
+                  Identifique tendência de crescimento, risco de esgotamento e oportunidades
+                  de otimização antes que a capacidade vire urgência operacional.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-shield-alt"></span>
+                <h3>Governança em cada execução</h3>
+                <p>
+                  Registre eventos, entradas, saídas, usuários, permissões e resultados para
+                  criar trilha de auditoria e reduzir zonas cegas na operação.
+                </p>
               </section>
 
             </div>
           </div>
 
-        <br>
-        <footer class="major">
+          <br />
+
+          <footer class="major">
+            <ul class="actions special">
+              <li><a href="#modulos" class="button primary">Conhecer a plataforma</a></li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Módulos -->
+      <section id="modulos" class="spotlight style3 right">
+        <span class="image fit main">
+          <img src="images/new_version/modulos2.png" alt="Módulos da Intellistor Platform" />
+        </span>
+
+        <div class="content">
+          <header>
+            <h2>Módulos da plataforma</h2>
+            <p>Uma arquitetura modular para governança, FinOps e inteligência operacional.</p>
+          </header>
+
+          <p><strong>Core</strong> — Inventário, provisionamento e automação de storage multivendor.</p>
+
+          <p><strong>Backup</strong> — Governança e automação de rotinas críticas de backup.</p>
+
+          <p><strong>FinOps</strong> — Custo, uso físico, capacidade alocada, chargeback e showback.</p>
+
+          <p><strong>Predict</strong> — Tendência de consumo, risco de esgotamento e recomendações.</p>
+
+          <ul class="actions">
+            <li><a href="#contato" class="button primary">Solicitar apresentação</a></li>
+          </ul>
+
+          <a href="#valor" class="goto-next scrolly">Next</a>
+        </div>
+      </section>
+
+      <!-- Valor -->
+      <section id="valor" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Valor real: operação técnica conectada à decisão financeira.</h2>
+            <p>
+              A Intellistor Platform transforma rotinas de Storage e Backup em inteligência operacional:
+              menos execução manual, mais governança, previsibilidade, rastreabilidade e visão de custo.
+            </p>
+          </header>
+
+          <div class="box alt">
+            <div class="row gtr-uniform">
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-bolt"></span>
+                <h3>Redução do esforço operacional</h3>
+                <p>
+                  Automatize rotinas repetitivas e libere o time técnico para atuar em decisões
+                  de arquitetura, melhoria contínua e evolução da infraestrutura.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-check-circle"></span>
+                <h3>Padronização da operação</h3>
+                <p>
+                  Transforme conhecimento técnico em fluxos consistentes, reduzindo variações,
+                  retrabalho e dependência de procedimentos manuais.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-clipboard-list"></span>
+                <h3>Governança e auditoria</h3>
+                <p>
+                  Registre ações, usuários, parâmetros, resultados e eventos para criar uma trilha
+                  confiável de execução e suporte à auditoria.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-chart-area"></span>
+                <h3>Previsibilidade de capacidade</h3>
+                <p>
+                  Acompanhe crescimento, uso real e tendência para antecipar riscos de esgotamento
+                  antes que eles se tornem incidentes ou compras emergenciais.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-coins"></span>
+                <h3>FinOps para infraestrutura</h3>
+                <p>
+                  Conecte capacidade alocada, uso físico e custo por GB para apoiar chargeback,
+                  showback, otimização e decisões de investimento.
+                </p>
+              </section>
+
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <span class="icon solid alt major fa-users-cog"></span>
+                <h3>Menos dependência de especialistas</h3>
+                <p>
+                  Reduza concentração de conhecimento, preserve padrões operacionais e aumente
+                  a resiliência do time em ambientes multivendor.
+                </p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integrações -->
+      <section id="integracoes" class="spotlight style2 left">
+        <span class="image fit main">
+          <img src="images/new_version/modulos3.png" alt="Integrações com fabricantes de storage e infraestrutura" />
+        </span>
+
+        <div class="content">
+          <header>
+            <h2>Integração com o ecossistema corporativo</h2>
+          </header>
+
+          <p>
+            A Intellistor Platform foi desenhada para operar em ambientes heterogêneos, com foco
+            em integração via APIs, automação segura e evolução modular.
+          </p>
+
+          <p>
+            <strong>Storages:</strong> Pure, Huawei, Hitachi.
+            <br />
+            <strong>SAN:</strong> Cisco MDS, Brocade.
+            <br />
+            <strong>Backup:</strong> Veritas NetBackup.
+            <br />
+            <strong>Virtualização e dados:</strong> VMware vCenter, APIs REST, bases SQL e integrações customizadas.
+          </p>
+
+          <p>
+            As integrações podem ser ativadas de forma progressiva, conforme maturidade,
+            prioridade técnica e estratégia de implantação do cliente.
+          </p>
+
+          <ul class="actions">
+            <li><a href="#contato" class="button primary">Avaliar aderência técnica</a></li>
+          </ul>
+
+          <a href="#publico" class="goto-next scrolly">Next</a>
+        </div>
+      </section>
+
+      <!-- Para quem é -->
+      <section id="publico" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Para quem é a Intellistor Platform?</h2>
+            <p>
+              Para organizações que operam infraestrutura crítica e buscam simplificar a gestão de Storage, SAN e
+              Backup com automação inteligente, governança nativa e foco total em resultados.
+            </p>
+          </header>
+
+          <div class="box alt">
+            <div class="row gtr-uniform">
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-building"></span>
+                <h3>Empresas com operação crítica</h3>
+                <p>
+                  Companhias que dependem de storage corporativo, SAN, backup e alta disponibilidade
+                  para sustentar aplicações, dados e serviços essenciais ao negócio.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-user-tie"></span>
+                <h3>Gestores de infraestrutura</h3>
+                <p>
+                  Lideranças que precisam enxergar capacidade, risco, custo, eficiência e governança
+                  para priorizar investimentos e justificar decisões técnicas com impacto financeiro.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-tools"></span>
+                <h3>Times de Storage, Backup e DevOps</h3>
+                <p>
+                  Equipes que executam provisionamentos, integrações, troubleshooting e rotinas críticas,
+                  mas precisam reduzir esforço manual, erro operacional e dependência de processos artesanais.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-network-wired"></span>
+                <h3>Ambientes multivendor</h3>
+                <p>
+                  Operações com Huawei, Hitachi, NetApp, Pure, Cisco, Brocade, Veritas e outras tecnologias
+                  que precisam de uma camada única de controle, automação e rastreabilidade.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-chart-pie"></span>
+                <h3>Áreas que buscam FinOps</h3>
+                <p>
+                  Empresas que querem conectar capacidade alocada, uso físico, custo por GB, chargeback
+                  e showback para transformar infraestrutura em informação de gestão.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-route"></span>
+                <h3>Projetos de modernização</h3>
+                <p>
+                  Iniciativas que precisam reduzir tarefas manuais, melhorar governança,
+                  automatizar fluxos críticos e criar uma base operacional mais escalável.
+                </p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diagnóstico -->
+      <section id="diagnostico" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Comece com um diagnóstico do seu ambiente.</h2>
+            <p>
+              Antes de automatizar, é preciso entender onde estão os gargalos, riscos,
+              desperdícios e oportunidades de ganho operacional na sua infraestrutura.
+            </p>
+          </header>
+
+          <div class="box alt">
+            <div class="row gtr-uniform">
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-search"></span>
+                <h3>Mapeamento técnico</h3>
+                <p>
+                  Levantamento dos fabricantes, storages, fluxos operacionais, integrações,
+                  processos manuais e principais pontos de risco.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-chart-line"></span>
+                <h3>Potencial de ganho</h3>
+                <p>
+                  Identificação de rotinas que podem ser automatizadas, indicadores de capacidade,
+                  oportunidades de FinOps e redução de esforço operacional.
+                </p>
+              </section>
+
+              <section class="col-4 col-12-medium">
+                <span class="icon solid alt major fa-route"></span>
+                <h3>Plano de evolução</h3>
+                <p>
+                  Definição de uma jornada progressiva para adoção da Intellistor Platform,
+                  começando por entregas de maior impacto e menor risco.
+                </p>
+              </section>
+
+            </div>
+          </div>
+
+          <br />
+
+          <footer class="major">
+            <ul class="actions special">
+              <li><a href="#contato" class="button primary">Solicitar diagnóstico</a></li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Implementação -->
+      <section id="implementacao" class="spotlight style2 left">
+        <span class="image fit main bottom">
+          <img src="images/new_version/modulos4.png" alt="Implantação progressiva da Intellistor Platform" />
+        </span>
+
+        <div class="content">
+          <header>
+            <h2>Implantação progressiva e orientada a valor</h2>
+          </header>
+
+          <p>
+            A adoção da Intellistor Platform pode começar por um diagnóstico técnico,
+            avançar para automações prioritárias e evoluir para módulos de FinOps,
+            predição, backup e governança completa.
+          </p>
+
+          <ul>
+            <li><strong>1. Diagnóstico:</strong> avaliação do ambiente, fabricantes, processos e dores operacionais.</li>
+            <li><strong>2. MVP controlado:</strong> automação de fluxos prioritários com baixo risco.</li>
+            <li><strong>3. Expansão modular:</strong> ativação de novos fabricantes, painéis e integrações.</li>
+            <li><strong>4. Governança contínua:</strong> auditoria, métricas, FinOps e evolução da operação.</li>
+          </ul>
+
+          <ul class="actions">
+            <li><a href="#contato" class="button primary">Solicitar plano de implantação</a></li>
+          </ul>
+
+          <a href="#clientes" class="goto-next scrolly">Next</a>
+        </div>
+      </section>
+
+      <!-- Clientes Ativos / Suporte -->
+      <section id="clientes" class="spotlight style3 right">
+        <span class="image fit main bottom">
+          <img src="images/new_version/principal.png" alt="Suporte da Intellistor Platform" />
+        </span>
+
+        <div class="content">
+          <header>
+            <h2>Suporte para clientes</h2>
+            <p>
+              Apoio técnico para operar, evoluir e extrair valor contínuo da Intellistor Platform.
+            </p>
+          </header>
+
+          <p><strong>Operação assistida</strong> — Uso da plataforma, validação de fluxos e evolução das automações.</p>
+
+          <p><strong>Suporte especializado</strong> — Atendimento em Storage, SAN, Backup e integrações.</p>
+
+          <p><strong>Documentação técnica</strong> — Guias, boas práticas e padrões para o time operacional.</p>
+
+          <p>
+            <small>
+              <i>O escopo e o nível de suporte são definidos conforme o plano contratado e as necessidades operacionais
+                do cliente.</i>
+            </small>
+          </p>
+
+          <ul class="actions">
+            <li><a href="#contato" class="button primary">Solicitar suporte</a></li>
+          </ul>
+
+          <a href="#cta-final" class="goto-next scrolly">Next</a>
+        </div>
+      </section>
+
+      <!-- CTA Final -->
+      <section id="cta-final" class="wrapper style1 special fade-up">
+        <div class="container">
+          <header class="major">
+            <h2>Sua operação de storage pode ser mais inteligente, governada e rentável.</h2>
+            <p>
+              Dê o próximo passo para transformar rotinas manuais em automação,
+              dados técnicos em decisões financeiras e infraestrutura crítica em vantagem operacional.
+            </p>
+          </header>
+
+          <ul class="actions special">
+            <li><a href="#contato" class="button primary">Quero avaliar meu ambiente</a></li>
+            <li><a href="#contato" class="button">Agendar demonstração</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="wrapper style2 special fade">
+        <div class="container">
+          <header>
+            <h2>Fale com a Intellistor</h2>
+            <p>
+              Solicite uma demonstração, diagnóstico técnico, proposta comercial
+              ou suporte para a Intellistor Platform.
+            </p>
+          </header>
+
+          <form method="post" action="https://formspree.io/f/xyklagvw" class="cta">
+            <div class="row gtr-uniform gtr-50">
+              <div class="col-3 col-12-xsmall">
+                <input type="text" name="nome" placeholder="Nome" required />
+              </div>
+
+              <div class="col-3 col-12-xsmall">
+                <input type="email" name="email" placeholder="Email corporativo" required />
+              </div>
+
+              <div class="col-3 col-12-xsmall">
+                <input type="text" name="empresa" placeholder="Empresa" required />
+              </div>
+
+              <div class="col-3 col-12-xsmall">
+                <input type="submit" value="Enviar" class="fit primary" />
+              </div>
+            </div>
+
+            <br />
+
+            <div class="row gtr-uniform gtr-50">
+              <div class="col-12">
+                <textarea
+                  name="mensagem"
+                  placeholder="Conte rapidamente o que você precisa: diagnóstico, demonstração, suporte ou proposta comercial."
+                  rows="4"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+
+          <br />
+
           <ul class="actions special">
             <li>
-              <a href="#modulos" class="goto-next scrolly">Next</a>
+              <a
+                href="https://wa.me/55SEUNUMERO?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Intellistor%20Platform."
+                target="_blank"
+                rel="noopener"
+                class="button"
+              >
+                Falar pelo WhatsApp
+              </a>
             </li>
           </ul>
-        </footer>
-      </div>
-    </section>
-
-    <!-- Modulos -->
-    <section id="modulos" class="spotlight style3 right">
-      <span class="image fit main"><img src="images/diferencial.png" alt="IA em operação técnica" /></span>
-      <div class="content">
-        <header>
-          <h2>Módulos</h2>
-        </header>
-            <p>
-              • <b>Core</b>: Console unificado para gerenciar objetos de storage com automação de provisionamento e
-              integração via API com os principais fabricantes.<br><br>
-              • <b>Predict</b>: Módulo preditivo com inteligência artificial que estima o esgotamento de volumes e
-              apoia o capacity planning com base em dados reais.<br><br>
-              • <b>Backup</b>: Orquestrador de backups com validação automatizada e integração via API para
-              garantir conformidade e evitar falhas críticas.
-            </p>
-        <!--<ul class="actions">
-          <li><a href="#contato" class="button">Saiba mais</a></li>
-        </ul>-->
-        <a href="#diferenciais" class="goto-next scrolly">Next</a>
-      </div>
-    </section>
-
-    <!-- Diferenciais -->
-    <section id="diferenciais" class="spotlight style2 left">
-      <span class="image fit main"><img src="images/modulos.png" alt="IA em operação técnica" /></span>
-      <div class="content">
-        <header>
-          <h2>Nossos diferenciais</h2>
-        </header>
-        <div class="features">
-          <section>
-            <h3>Automação completa</h3>
-            <p>Do cadastro ao provisionamento, com padronização e rastreabilidade.</p>
-          </section>
-
-          <section>
-            <h3>Integração SAN + vCenter</h3>
-            <p>Gerencie LUNs ponta a ponta com visão técnica e operacional unificada.</p>
-          </section>
-
-          <section>
-            <h3>Análise preditiva</h3>
-            <p>Antecipe o esgotamento de volumes e planeje ações com base em dados reais.</p>
-          </section>
         </div>
-        <!--<ul class="actions">
-          <li><a href="#contato" class="button">Saiba mais</a></li>
-        </ul>-->
-        <a href="#negocio" class="goto-next scrolly">Next</a>
-      </div>
-    </section>
+      </section>
 
-    <!-- Modelo de Negócio -->
-    <section id="negocio" class="spotlight style3 right">
-      <span class="image fit main bottom"><img src="images/principal.png" alt="Modelo de negócio em tecnologia" /></span>
-      <div class="content">
-        <header>
-          <h2>Modelo de Negócio</h2>
-        </header>
-        <p>Modelo de licenciamento anual por instância, com suporte enterprise incluso para garantir continuidade e
-          alta disponibilidade.</p>
-        <p>Comercialização direta ou por meio de integradores de storage estratégicos,
-          viabilizando expansão de mercado. </p>
-        <p>Estrutura de receita recorrente escalável, com possibilidade de aumento
-          de ticket médio por meio da adesão modular aos componentes da plataforma (Core, Predict, Backup).</p>
-        <!--<ul class="actions">
-          <li><a href="#contato" class="button">Saiba mais</a></li>
-        </ul>-->
-        <a href="#implementacao" class="goto-next scrolly">Next</a>
-      </div>
-    </section>
-
-    <!-- Implementação -->
-    <section id="implementacao" class="spotlight style2 left">
-      <span class="image fit main bottom"><img src="images/roadmap.png" alt="Modelo de negócio em tecnologia" /></span>
-      <div class="content">
-        <header>
-          <h2>Roadmap Intellistor Core</h2>
-          <p>Cada fase do roadmap agrega valor prático, preparando a plataforma para operação em larga escala.</p>
-        </header>
-        <ul>
-          <li><strong>Q1:</strong> MVP Core validado + Integração inicial com Huawei.</li>
-          <li><strong>Q2:</strong> Expansão do Core + Integração com Hitachi ou NetApp.</li>
-          <li><strong>Q3:</strong> Automação completa de ZONEs (Storage ↔️ Switch).</li>
-          <li><strong>Q4:</strong> Lançamento do painel do cliente e versão comercial da plataforma.</li>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="https://www.instagram.com/intellistor" class="icon brands alt fa-instagram" target="_blank" rel="noopener">
+              <span class="label">Instagram</span>
+            </a>
+          </li>
         </ul>
-        <!--<ul class="actions">
-          <li><a href="#contato" class="button">Saiba mais</a></li>
-        </ul>-->
-        <a href="#fases" class="goto-next scrolly">Next</a>
-      </div>
-    </section>
 
-    <!-- Fases -->
-    <section id="fases" class="wrapper style1 special fade-up">
-      <div class="container">
-        <header class="major">
-          <h2>Implementação</h2>
-          <p>O primeiro ano é dividido em quatro fases, com entregas progressivas de valor técnico e estratégico para
-            ambientes multivendor.</p>
-        </header>
-        <div class="box alt">
-          <div class="row gtr-uniform">
-
-            <section class="col-6 col-6-medium col-12-xsmall">
-              <span class="icon solid alt major fa-server"></span>
-              <h3>Q1: MVP Core + Huawei</h3>
-              <p><b>Entrega:</b> Primeiro módulo funcional com integração real com Huawei.<br/>
-              <b>Destaques:</b> Redução de 40% no tempo de provisionamento, padronização de rotinas e automação de objetos.</p>
-            </section>
-
-            <section class="col-6 col-6-medium col-12-xsmall">
-              <span class="icon solid alt major fa-code-branch"></span>
-              <h3>Q2: Integração NetApp/Hitachi</h3>
-              <p><b>Entrega:</b> Expansão do Core com suporte a NetApp ou Hitachi.<br/>
-              <b>Destaques:</b> Unificação multivendor, ganho operacional de 50% e oferta de treinamentos customizados.</p>
-            </section>
-
-            <section class="col-6 col-6-medium col-12-xsmall">
-              <span class="icon solid alt major fa-sitemap"></span>
-              <h3>Q3: Automação de ZONEs</h3>
-              <p><b>Entrega:</b> Orquestração de configurações SAN entre storages e switches.<br/>
-              <b>Destaques:</b> Redução de 70% no tempo de configuração, padronização e rastreabilidade.</p>
-            </section>
-
-            <section class="col-6 col-6-medium col-12-xsmall">
-              <span class="icon solid alt major fa-desktop"></span>
-              <h3>Q4: Painel do Cliente</h3>
-              <p><b>Entrega:</b> Versão final com dashboard amigável, gestão de ativos e licenças.<br/>
-              <b>Destaques:</b> Visibilidade centralizada, agilidade no suporte e escalabilidade da plataforma.</p>
-            </section>
-
-          </div>
-        </div>
-        <br>
-        <footer class="major">
-          <ul class="actions special">
-            <li><a href="#oportunidade" class="goto-next scrolly">Next</a></li>
-          </ul>
-        </footer>
-      </div>
-    </section>
-
-    <!-- Oportunidades -->
-    <section id="oportunidade" class="spotlight style3 right">
-      <span class="image fit main bottom"><img src="images/oportunidades.png" alt="Modelo de negócio em tecnologia" /></span>
-      <div class="content">
-        <header>
-          <h2>Por que agora?</h2>
-        </header>
-        <p>A gestão de dados e storage passa por uma transformação. Ambientes multivendor exigem inteligência,
-          agilidade e padronização — e este é o momento ideal para assumir protagonismo.</p>
-        <p>Organizações que já operam junto a grandes ambientes corporativos podem ampliar seu portfólio e protagonizar
-          essa mudança por meio de parcerias estratégicas com plataformas emergentes como a Intellistor.</p>
-        <p>Acreditamos que quem se move primeiro, lidera — e essa é a oportunidade de construir, em parceria, o futuro
-          da gestão de dados.
-        </p>
-        <ul class="actions special">
-          <li><a href="solucoes.html" class="button primary">Explorar as soluções</a></li>
+        <ul class="copyright">
+          <li>&copy; 2026 Intellistor Tecnologia. Todos os direitos reservados.</li>
+          <li>Automação, governança e FinOps para storage multivendor.</li>
         </ul>
-      </div>
-      <a href="#contato" class="goto-next scrolly">Next</a>
-    </section>
+      </footer>
 
+    </div>
 
-    <!-- Contato -->
-    <section id="contato" class="wrapper style2 special fade">
-      <div class="container">
-        <header>
-          <h2>Quer saber mais sobre as nossas soluções?</h2>
-          <p>Um consultor entrará em contato com você</p>
-        </header>
-        <form method="post" action="#" class="cta">
-          <div class="row gtr-uniform gtr-50">
-            <div class="col-4 col-12-xsmall"><input type="text" name="nome" placeholder="Nome" /></div>
-            <div class="col-4 col-12-xsmall"><input type="email" name="email" placeholder="Email" /></div>
-            <div class="col-4 col-12-xsmall"><input type="submit" value="Enviar" class="fit primary" /></div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-		<!--<li><a href="#" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>-->
-		<!--<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label" target="_blank">Facebook</span></a></li>-->
-		<!--<li><a href="https://www.linkedin.com/in/intellistor/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>-->
-		<li><a href="https://www.instagram.com/intellistor" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-		<!--<li><a href="https://github.com/intellistor" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>-->
-		<!--<li><a href="#" class="icon solid alt fa-envelope"><span class="label" target="_blank">Email</span></a></li>-->
-      </ul>
-      <ul class="copyright">
-        <li>&copy; 2025 Intellistor Tecnologia. Todos os direitos reservados.</li>
-        <li>Desenvolvido por Intellistor</li>
-      </ul>
-    </footer>
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
