@@ -5860,3 +5860,123 @@ textarea:focus {
     font-size: 0.82em !important;
   }
 }
+
+/* =========================================================
+   Intellistor - Hero Logo
+   ========================================================= */
+
+.hero-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.25em auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 12px 30px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(56, 189, 248, 0.14);
+}
+
+.hero-logo-3d {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: perspective(900px) rotateX(6deg);
+  filter: drop-shadow(0 24px 35px rgba(0, 0, 0, 0.55));
+
+  box-shadow:
+    0 0 0 1px rgba(80, 220, 255, 0.28),
+    0 0 28px rgba(43, 190, 255, 0.32),
+    inset 0 0 22px rgba(255, 255, 255, 0.12),
+    inset 0 -18px 28px rgba(0, 0, 0, 0.35);
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-logo-3d img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+
+  transform: translateZ(20px) scale(1.02);
+  filter:
+    contrast(1.08)
+    saturate(1.12)
+    brightness(1.05);
+}
+
+.hero-logo-3d::before {
+  content: "";
+  position: absolute;
+  inset: 8px 12px auto 12px;
+  height: 42%;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.14) 42%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: rotate(-12deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-logo-3d::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(37, 196, 255, 0.32),
+    rgba(37, 196, 255, 0.12) 42%,
+    transparent 70%
+  );
+  filter: blur(14px);
+  z-index: -1;
+}
+
+.hero-logo-3d {
+  animation: logoFloat 5s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: perspective(900px) rotateX(6deg) translateY(0);
+  }
+
+  50% {
+    transform: perspective(900px) rotateX(6deg) translateY(-8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-logo-3d {
+    width: 118px;
+    height: 118px;
+    margin-bottom: 22px;
+  }
+}
