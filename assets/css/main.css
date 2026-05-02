@@ -5980,3 +5980,340 @@ textarea:focus {
     margin-bottom: 22px;
   }
 }
+
+
+.hero.compact {
+    min-height: 100vh;
+}
+
+.hero.compact .content {
+    text-align: center;
+}
+
+.journey-flow {
+    margin-top: 2.5em;
+}
+
+.journey-flow .box {
+    margin-bottom: 0;
+}
+
+.journey-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25em;
+    height: 3.25em;
+    border-radius: 100%;
+    background: rgba(228, 76, 101, 0.12);
+    border: solid 1px rgba(228, 76, 101, 0.55);
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.module-card,
+.plan-card,
+.metric-card {
+    height: 100%;
+}
+
+.module-card h3,
+.plan-card h3,
+.metric-card h3 {
+    margin-bottom: 0.35em;
+}
+
+.module-card .subtitle,
+.plan-card .subtitle {
+    display: block;
+    color: #89bde4;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+}
+
+.module-card ul,
+.plan-card ul,
+.metric-card ul {
+    text-align: left;
+    margin-left: 0;
+}
+
+.executive-value {
+    margin-top: 1.5em;
+    padding-top: 1.25em;
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+.executive-value strong {
+    color: #ffffff;
+}
+
+.plan-badge {
+    display: inline-block;
+    padding: 0.35em 0.85em;
+    border-radius: 999px;
+    background: rgba(228, 76, 101, 0.16);
+    border: solid 1px rgba(228, 76, 101, 0.45);
+    color: #ffffff;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.matrix-wrapper {
+    overflow-x: auto;
+    border-radius: 0.35em;
+}
+
+table.commercial-matrix {
+    min-width: 760px;
+    margin-bottom: 0;
+}
+
+table.commercial-matrix th,
+table.commercial-matrix td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.commercial-matrix th:first-child,
+table.commercial-matrix td:first-child {
+    text-align: left;
+    font-weight: 700;
+}
+
+.yes {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.no {
+    opacity: 0.55;
+}
+
+.note-box {
+    margin-top: 2em;
+}
+
+.commercial-summary strong {
+    color: #ffffff;
+}
+
+.modules-row-spacer {
+    height: 2.5rem;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 980px) {
+    .modules-row-spacer {
+      height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .hero.compact h2 {
+      font-size: 2em;
+    }
+
+    .journey-step-number {
+      width: 2.85em;
+      height: 2.85em;
+    }
+}
+
+
+/* Garante que as colunas tenham altura igual */
+#modulos .row.gtr-uniform > section {
+  display: flex;
+}
+
+/* Card ocupa toda a altura disponível */
+#modulos .module-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Lista cresce e empurra o valor executivo para baixo */
+#modulos .module-card ul {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+/* Linha + valor executivo alinhados no rodapé */
+#modulos .module-card .executive-value {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: center;
+}
+
+.module-card .icon.major {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto; /* centraliza o círculo no card */
+}
+
+.module-card .icon.major:before {
+  margin: 0;
+  line-height: 1;
+}
+
+.matrix-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.commercial-matrix {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #ffffff;
+  border: 1px solid rgba(86, 120, 170, 0.35);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(7, 18, 43, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* bordas de todas as células */
+.commercial-matrix th,
+.commercial-matrix td {
+  padding: 1.35rem 1.25rem;
+  border-right: 1px solid rgba(86, 120, 170, 0.22);
+  border-bottom: 1px solid rgba(86, 120, 170, 0.22);
+  vertical-align: middle;
+}
+
+/* remove borda da última coluna */
+.commercial-matrix th:last-child,
+.commercial-matrix td:last-child {
+  border-right: none;
+}
+
+/* remove borda inferior da última linha */
+.commercial-matrix tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* primeira linha do cabeçalho */
+.commercial-matrix .matrix-group-row th {
+  background: rgba(16, 34, 73, 0.92);
+  color: #ffffff;
+  font-size: 1.65rem;
+  font-weight: 700;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+  text-align: center;
+}
+
+/* segunda linha do cabeçalho */
+.commercial-matrix .matrix-columns-row th {
+  background: rgba(12, 27, 59, 0.92);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* célula Plano Comercial */
+.commercial-matrix .plan-header {
+  width: 23%;
+  min-width: 260px;
+  text-align: left !important;
+  font-size: 1.2rem !important;
+  padding-left: 1.5rem;
+}
+
+/* célula Módulo Funcional */
+.commercial-matrix .modules-header {
+  text-align: center;
+}
+
+/* corpo */
+.commercial-matrix tbody td {
+  font-size: 1rem;
+  text-align: center;
+  background: transparent;
+}
+
+/* primeira coluna do corpo */
+.commercial-matrix tbody td:first-child {
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 1.5rem;
+  white-space: nowrap;
+}
+
+/* linhas alternadas com tons diferentes */
+.commercial-matrix tbody tr:nth-child(odd) td {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.commercial-matrix tbody tr:nth-child(even) td {
+  background: rgba(10, 21, 45, 0.42);
+}
+
+/* hover opcional */
+.commercial-matrix tbody tr:hover td {
+  background: rgba(58, 110, 190, 0.10);
+  transition: background 0.25s ease;
+}
+
+/* status */
+.commercial-matrix .yes {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.commercial-matrix .no {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+/* box de observação */
+.matrix-note {
+  margin-top: 1.5rem;
+  border: 1px solid rgba(86, 120, 170, 0.35);
+  border-radius: 12px;
+  background: rgba(7, 18, 43, 0.38);
+  padding: 2rem 2.25rem;
+  text-align: center;
+}
+
+.matrix-note p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* responsividade */
+@media screen and (max-width: 980px) {
+  .commercial-matrix {
+    min-width: 980px;
+  }
+
+  .commercial-matrix .matrix-group-row th {
+    font-size: 1.3rem;
+  }
+
+  .commercial-matrix .matrix-columns-row th,
+  .commercial-matrix tbody td {
+    font-size: 0.95rem;
+  }
+}
